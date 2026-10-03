@@ -1,0 +1,132 @@
+/*? global clearing */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bg-white {
+    border-radius: 15px;
+}
+
+.dasar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak {
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.68);
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+     width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#opening{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+svg {
+    display: flex;
+    font-family: "Bitcount Prop Double", system-ui;
+    width: 100%;
+    height: 100%;
+    color: aqua;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 74.3,
+        "ELXP" 0;
+}
+
+svg text {
+    animation: stroke 10s infinite alternate;
+    stroke-width: 1;
+    stroke: #365FA0;
+    font-size: 40px;
+}
+
+.text2{
+    font-size: 30px;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgb(255, 255, 255);
+        stroke-dashoffset: 30%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 4;
+    }
+
+    70% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(195, 193, 193, 0.354);
+    }
+
+    80% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgb(248, 248, 248);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: rgb(113, 116, 118);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.wrapper2 {
+    margin-top: 20px ;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0);
+    font-size: 40px;
+}
+
+.kotak a{
+    font-size: 40px;
+    color: aliceblue ;
+    border-radius: 15px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.kotak a:hover{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0, 0.5);
+    transform: rotate(5deg);
+}
